@@ -113,12 +113,20 @@ public class User {
     //     this.createdAt = createdAt;
     // }
 
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+    
+
     @Override
     public String toString() {
         return "User [active=" + active + ", createdAt=" + createdAt + ", email=" + email + ", firstName=" + firstName
                 + ", id=" + id + ", lastName=" + lastName + ", password=" + password + ", username=" + username + "]";
     }
-
 
 
 }
